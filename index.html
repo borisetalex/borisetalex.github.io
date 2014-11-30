@@ -1,261 +1,346 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"[]>
-<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
-<head>
-    
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Main</title>
+<!DOCTYPE html>
+<html lang="fr"><head>
+<meta charset="utf-8">
+<title>Alexandra et Boris se marrient!</title>
+<meta name="description" content="Toutes les infos pratiques sur le mariage de Boris et Alexandra.">
+<meta name="author" content="Studio Minière">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS STARTS -->
+
+<!--   Google fonts  -->
+<link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=BenchNine:700' rel='stylesheet' type='text/css'>
+<!--   main stylesheet  -->
+<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title">
+<link id="colors" rel="stylesheet" href="stylesheets/pistachio.css" type="text/css" media="screen" title="no title">
+
+<!-- CSS ENDS -->
 
 
-    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-    <!--[if IE 6]><link rel="stylesheet" href="style.ie6.css" type="text/css" media="screen" /><![endif]-->
-    <!--[if IE 7]><link rel="stylesheet" href="style.ie7.css" type="text/css" media="screen" /><![endif]-->
+<!-- JAVASCRIPT STARTS -->
 
-    <script type="text/javascript" src="jquery.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+<script >
+// iOS viewport scaling bug fix
+// https://gist.github.com/901295
+// Rewritten version
+// By @mathias, @cheeaun and @jdalton
+
+(function(doc) {
+
+var addEvent = 'addEventListener',
+    type = 'gesturestart',
+    qsa = 'querySelectorAll',
+    scales = [1, 1],
+    meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+
+function fix() {
+	meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+	doc.removeEventListener(type, fix, true);
+}
+
+if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+	fix();
+	scales = [.25, 1.6];
+	doc[addEvent](type, fix, true);
+}
+
+}(document));
+</script>
+
+<!-- custom modernizr build -->
+<script src="javascript/modernizr.js"></script>
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- GoogleMaps -->
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<!-- GoogleMaps, photo gallery and slider -->
+<script src="javascript/libraries-ck.js"></script>
+<!-- custom js class -->
+<script src="javascript/save_the_date-ck.js"></script>
+
+
+<!-- Configuration -->
+<script>
+$(document).ready(function() {
+	// init Save the Date
+	save_the_date.init({
+		weddingDate: "2015/06/20, 10:00", 
+		//Date : enter your wedding date
+    labels: ["jours", "heures", "minutes", "secondes"], 
+		//Array of strings : labels of time units
+		sendServerMessages: ["Merci! Votre message a bien été transmis à Alexandra et Boris.", "Désolé, une erreur est survenue et votre message n'a pas pu être transmis à Alexandra et Boris"],
+		//Array of strings : Messages from the server on send
+		gallery : ["images/gallery/gallery1.jpg", "images/gallery/gallery2.jpg", "images/gallery/gallery3.jpg", "images/gallery/gallery4.jpg"],
+		//Array image pathes
+		titles : ['Just us', 'Reception', 'Flowers we chose', 'In the eyes'],
+		//Array of strings : corresponding titles
+		});	
+});
+</script>
+
+<script src="javascript/init-ck.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- JAVASCRIPT ENDS -->
+
 </head>
-<body>
-<div id="art-page-background-glare">
-    <div id="art-page-background-glare-image"> </div>
-</div>
-<div id="art-main">
-    <div class="cleared reset-box"></div>
-<div class="art-nav">
-	<div class="art-nav-l"></div>
-	<div class="art-nav-r"></div>
-<div class="art-nav-outer">
-<div class="art-nav-wrapper">
-<div class="art-nav-inner">
-	<div class="art-nav-center">
-	<ul class="art-hmenu">
-		<li>
-			<a href="./main.html" class="active"><span class="l"></span><span class="r"></span><span class="t">Main</span></a>
-		</li>	
-		<li>
-			<a href="./home.html"><span class="l"></span><span class="r"></span><span class="t">Announcements</span></a>
-		</li>	
-		<li>
-			<a href="./calendar.html"><span class="l"></span><span class="r"></span><span class="t">Calendar</span></a>
-		</li>	
-		<li>
-			<a href="./statistics.html"><span class="l"></span><span class="r"></span><span class="t">Statistics</span></a>
-		</li>	
-		<li>
-			<a href="./photos-2.html"><span class="l"></span><span class="r"></span><span class="t">Photos</span></a>
-		</li>	
-		<li>
-			<a href="./about.html"><span class="l"></span><span class="r"></span><span class="t">About Us</span></a>
-		</li>	
-		<li>
-			<a href="./contacts.html"><span class="l"></span><span class="r"></span><span class="t">Contacts</span></a>
-		</li>	
-	</ul>
+<!--[if lt IE 9]> <body  id="top" class="ie-fix"><![endif]-->	
+<!--[if (gt IE 8)|!(IE)]><!--> <body  id="top"><!--<![endif]-->
+	
+	<!--- NAVIGATION STARTS -->
+	<div class="nav-container">
+		<div class="nav">
+			<a  id="full-menu" href="#">&equiv;</a>
+			<a class="active to-scroll" href="#top">Accueil</a>
+			<a class="to-scroll" href="#about">Alex & Boris</a>
+			<a class="to-scroll" href="#ceremony">Cérémonie</a>
+			<a class="to-scroll" href="#registry">Hébergement</a>
+			<!-- <a class="to-scroll" href="#video">Save the Date</a> -->
+			<a class="to-scroll" href="#pictures">Photos</a>
+			<a href="#" id="gallery">Gallerie</a>
+			<a class="to-scroll" href="#rsvp">RSVP/Contact</a>
+      <div class="effect"></div>
+		</div>
 	</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cleared reset-box"></div>
-<div class="art-header">
-    <div class="art-header-wrapper">
-    <div class="art-header-inner">
-        <div class="art-headerobject"></div>
-        <div class="art-logo">
-                 <h1 class="art-logo-name"><a href="./index.html">Aerobic Gym</a></h1>
-                         <h2 class="art-logo-text">Excersize To Get In Shape</h2>
-                </div>
+	<!--- NAVIGATION ENDS -->
+	
+	<!-- HEADER STARTS -->
+  <header class="header" role="banner">
+    <h1 class="wrapper">Alexandra <FONT COLOR=#99cc33 >& </FONT> Boris</h1>
+    
+    <div class="images">
+      <span class="her pile"></span>
+      <span class="him pile"></span>
     </div>
-    </div>
-    </div>
-    <div class="cleared reset-box"></div>
-    <div class="art-sheet">
-        <div class="art-sheet-tl"></div>
-        <div class="art-sheet-tr"></div>
-        <div class="art-sheet-bl"></div>
-        <div class="art-sheet-br"></div>
-        <div class="art-sheet-tc"></div>
-        <div class="art-sheet-bc"></div>
-        <div class="art-sheet-cl"></div>
-        <div class="art-sheet-cr"></div>
-        <div class="art-sheet-cc"></div>
-        <div class="art-sheet-body">
-            <div class="art-content-layout">
-                <div class="art-content-layout-row">
-                    <div class="art-layout-cell art-sidebar1">
-<div class="art-vmenublock">
-    <div class="art-vmenublock-body">
-                <div class="art-vmenublockcontent">
-                    <div class="art-vmenublockcontent-body">
-                <ul class="art-vmenu">
-	<li>
-		<a href="./main.html" class="active"><span class="l"></span><span class="r"></span><span class="t">Main</span></a>
-	</li>	
-	<li>
-		<a href="./home.html"><span class="l"></span><span class="r"></span><span class="t">Announcements</span></a>
-	</li>	
-	<li>
-		<a href="./calendar.html"><span class="l"></span><span class="r"></span><span class="t">Calendar</span></a>
-	</li>	
-	<li>
-		<a href="./statistics.html"><span class="l"></span><span class="r"></span><span class="t">Statistics</span></a>
-	</li>	
-	<li>
-		<a href="./photos-2.html"><span class="l"></span><span class="r"></span><span class="t">Photos</span></a>
-	</li>	
-	<li>
-		<a href="./about.html"><span class="l"></span><span class="r"></span><span class="t">About Us</span></a>
-	</li>	
-	<li>
-		<a href="./contacts.html"><span class="l"></span><span class="r"></span><span class="t">Contacts</span></a>
-	</li>	
-</ul>
-                
-                                		<div class="cleared"></div>
-                    </div>
-                </div>
-		<div class="cleared"></div>
-    </div>
-</div>
-<div class="art-block">
-    <div class="art-block-body">
-                <div class="art-blockheader">
-                    <div class="l"></div>
-                    <div class="r"></div>
-                    <h3 class="t">Members of the Month</h3>
-                </div>
-                <div class="art-blockcontent">
-                    <div class="art-blockcontent-body">
-                <p style="text-align: center; "><img alt="" width="162" height="140" src="./images/shutterstock_25031392.jpg" /></p>
-<p style="text-align: center; "><span style="font-weight: bold;">Linda Sommers</span></p>
-<p style="text-align: center; "><br /></p>
-<p style="text-align: center; "><img alt="" width="163" height="109" src="./images/shutterstock_41892892.jpg" /></p>
-<p style="text-align: center; "><span style="font-weight: bold;">Henry Stunt</span></p>                
-                                		<div class="cleared"></div>
-                    </div>
-                </div>
-		<div class="cleared"></div>
-    </div>
-</div>
-
-                      <div class="cleared"></div>
-                    </div>
-                    <div class="art-layout-cell art-content">
-<div class="art-post">
-    <div class="art-post-body">
-<div class="art-post-inner art-article">
-                                <div class="art-postcontent">
-<p><span style="font-weight: bold;">This is the first page of your gym website, and it is the best place to welcome your visitors, and explain why is your gym website worth seeing.</span></p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris. Cras elit nisl, rhoncus nec iaculis ultricies, feugiat eget sapien. Pellentesque ac felis tellus. </p>
-<p><img alt="" width="216" src="./images/shutterstock_26254903.jpg" height="144" /><img alt="" src="./images/shutterstock_23134795.jpg" width="216" height="144" /><img alt="" width="212" src="./images/shutterstock_9316666.jpg" height="145" /></p>
-<p>Aenean sollicitudin imperdiet arcu, vitae dignissim est posuere id. Duis placerat justo eu nunc interdum ultrices. Phasellus elit dolor, porttitor id consectetur sit amet, posuere id magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-<table class="art-article" border="0" cellspacing="0" cellpadding="0" style=" margin: 0; width: 100%;">
-	<tbody>
-		<tr>
-			<td style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 50%;">
-				<h3>Recent Announcements</h3>
-				<ul>
-					<li><strong>Changes in the Practice Schedule</strong><br /><br />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam pharetra, tellus sit amet congue vulputate, nisi erat iaculis nibh, vitae feugiat sapien ante eget mauris. Cras elit nisl, rhoncus nec iaculis ultricies, feugiat eget sapien. Nullam posuere interdum est sit amet aliquam.<br /><br /></li>
-					<li><strong>Getting Ready for the Next Game</strong><br /><br />In fringilla pharetra purus, semper vulputate ligula cursus in. Donec at nunc nec dui laoreet porta eu eu ipsum. Sed eget lacus sit amet risus elementum dictum.  Pellentesque sit amet imperdiet nunc. Aenean tellus mi, adipiscing sit amet laoreet eget, lobortis quis nisl. Quisque volutpat urna orci, id gravida nisi. </li>
-				</ul>
-			</td>
-			<td style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; width: 5%;"> </td>
-			<td style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
-				<h3>Team Stats</h3>
-				<table class="art-article" border="0" cellspacing="0" cellpadding="0" style=" margin: 0; width: 100%;">
-					<tbody>
-						<tr>
-							<td align="left" style="text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; width: 20%;"><span style="font-size: 12px;"><span style="font-weight: bold;">Place</span></span></td>
-							<td align="left" style="text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; width: 50%;"><span style="font-size: 12px;"><span style="font-weight: bold;">Team</span></span></td>
-							<td align="center" style="text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;"><span style="font-size: 12px;"><span style="font-weight: bold;">Score</span></span></td>
-						</tr>
-						<tr>
-							<td style="text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; width: 20%;" align="left">1</td>
-							<td style="padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; width: 50%;" align="left">Aaerobics</td>
-							<td style="width: 50px; text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">19</td>
-						</tr>
-						<tr>
-							<td style="text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; width: 20%;" align="left">2</td>
-							<td style="padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; width: 50%;" align="left">Dolphins</td>
-							<td style="width: 50px; text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">16</td>
-						</tr>
-						<tr>
-							<td style="text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; width: 20%;" align="left">3</td>
-							<td style="padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; width: 50%;" align="left">Cats</td>
-							<td style="width: 50px; text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">15</td>
-						</tr>
-						<tr>
-							<td style="text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; width: 20%;" align="left">4</td>
-							<td style="padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px; width: 50%;" align="left">Cheetahs</td>
-							<td style="width: 50px; text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">12</td>
-						</tr>
-					</tbody>
-				</table>
-				<br />
-				<table class="art-article" border="0" cellspacing="0" cellpadding="0" style=" margin: 0; width: 100%;">
-					<tbody>
-						<tr>
-							<td align="center" style="text-align: center; width: 50%; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;"><span style="font-size: 12px;"><span style="font-weight: bold;">Member</span></span></td>
-							<td align="center" style="text-align: center; width: 5%; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;"><span style="font-size: 12px;"><span style="font-weight: bold;">Perf.</span></span></td>
-							<td align="center" style="text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;"><span style="font-size: 12px;"><span style="font-weight: bold;">Score</span></span></td>
-						</tr>
-						<tr>
-							<td style="width: 50%; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">Smith, J.</td>
-							<td style="text-align: center; width: 5%; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">3</td>
-							<td style="width: 50px; text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">20</td>
-						</tr>
-						<tr>
-							<td style="width: 50%; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">Bernards, A.</td>
-							<td style="text-align: center; width: 5%; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">2</td>
-							<td style="width: 50px; text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">14</td>
-						</tr>
-						<tr>
-							<td style="width: 50%; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">Davids, G.</td>
-							<td style="text-align: center; width: 5%; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">5</td>
-							<td style="width: 50px; text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">11</td>
-						</tr>
-						<tr>
-							<td style="width: 50%; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">Owen, L.</td>
-							<td style="text-align: center; width: 5%; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">4</td>
-							<td style="width: 50px; text-align: center; padding-top: 5px; padding-right: 5px; padding-bottom: 5px; padding-left: 5px;" align="center">7</td>
-						</tr>
-					</tbody>
-				</table>
-			</td>
-		</tr>
-	</tbody>
-</table>
-                </div>
-                <div class="cleared"></div>
-                </div>
-
-		<div class="cleared"></div>
-    </div>
-</div>
-
-                      <div class="cleared"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="cleared"></div>
+    
+    <h2>
+      <span class="event">se marrient...</span>
+      <span class="date">le 20 juin 2015</span>
+      <span id="timer" class="timer"></span>
+    </h2>		
+  </header>	
+  <!-- HEADER ENDS -->
+	
+	<!--- MAIN CONTENT STARTS -->
+	<div class="content">
+	
+    <!-- ABOUT SECTION STARTS -->
+    <section id="about" class="about clearfix">
+      <div class="she">
+        <p>
+          <strong>Alexandra </strong> sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        </p>
+      </div>
+      
+      <div class="he">
+        <p>
+          <strong>Boris</strong> sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        </p>
+      </div>
+      
+      <div class="they">
+        <p>
+          <strong>They</strong> sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        </p>
+        <p>Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+        </p>
+      </div>
+    </section>
+    <!-- ABOUT SECTION ENDS -->
+			
+			<!-- CEREMONY SECTION STARTS -->
+	  <section  id="ceremony" class="flex-container ceremony">
+				
+      <div class="flexslider">
+        <ul class="slides">
+          <li style="background-image: url(images/slide0.jpg);"></li>
+          <li style="background-image: url(images/slide1.jpg);"></li>
+          <li style="background-image: url(images/slide2.jpg);"></li>
+        </ul>
+      </div>
+      
+      <div  class="wrapper clearfix">
+        
+          <h2 class="title">20.06.2015</h2> 
+          
+          <div class="ceremony-1">
             
-    		<div class="cleared"></div>
+              <img src="images/mairie.png" width="300" height="300" alt="Mairie">
+            </span>
+            <h3>Mairie</h3>
+            <p>10H00</p>
+            <p>Place St Marc - 56800 Augan</p>
+            <a class="map" data-lat="47.919365" data-lng="-2.279558" data-title="Mairie">Localiser sur  Google Maps</a>
+            <div class="pile my_map"><div id="map-ceremony"></div></div>		
         </div>
-    </div>
-    <div class="art-footer">
-        <div class="art-footer-body">
-            <div class="art-footer-center">
-                <div class="art-footer-wrapper">
-                    <div class="art-footer-text">
-                        <p>Copyright © 2011, Aerobics Gym. All Rights Reserved.</p>
-                        <div class="cleared"></div>
-                        <p class="art-page-footer"><a href="http://www.webtemplatesonline.com">Website Template</a> created by WebTemplatesOnline.com.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="cleared"></div>
+        <div class="ceremony-2">
+          <img src="images/salle.png" width="300" height="300" alt="Reception">
+          </span>
+          <h3>Cérémonie</h3>
+          <p>11H30</p>
+          <p>Espace de l'étang Bleu - 35380 Paimpont </p>
+          <a class="map" data-lat="48.024247" data-lng="-2.173345" data-title="Ceremonie" >Localiser sur Google Maps</a>	
+          <div class="pile my_map">
+            <div id="map-reception"></div>
+          </div>		
         </div>
-    </div>
-    <div class="cleared"></div>
-</div>
+          
+      </div>
+    </section>
+    <!-- CEREMONY SECTION ENDS -->
+    
+    <!--- PICTURES SECTION STARTS -->	
+    <!-- <section id="video">
+      <iframe width="480" height="360" src="//www.youtube.com/embed/ikywdi-FDD4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    </section> -->
+    <!-- PICTURES SECTION ENDS -->
+    
+    <!--- PICTURES SECTION STARTS -->	
+    <section id="pictures">
+      <div style='position: relative; padding-bottom: 41%; height: 0; overflow: hidden;'>
+        <iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=40&size=big&setId=72157649456379836&click=true&trans=1&theme=1&thumbnails=1&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0' style='width:100%; height:100%; position: absolute; top:0; left:0;'>
+        </iframe>
+      </div>
+    </section>
+    <!-- PICTURES SECTION ENDS -->
+    
 
+    <!--- REGISTRY STARTS -->	
+    <section id="registry" class="registry">
+      <div class="wrapper">
+        <h2 class="title">Hébérgement</h2>
+        <h3>Hôtels, chambres d'hôtes et gites</h3>
+        <p>Vous trouverez ci-dessous une liste des possibilités de logement à proximité du mariage:</p>
+        <ul>
+          <li>
+            <table width="1022" border="0">
+              <tr>
+                <td width="308">
+                  <img src="images/hotels/logis-le-relais-de-broceliande.jpg" alt="hotel">
+                </td>
+                <td width="436"><p>Le Relais de Brocéliande</p>
+                  <p>description description description<br>
+                    description description description					          </p>
+                  <p>Nombre de cochages:</p>
+                </td>
+                <td width="285"><p>Prix/nuit: 100€</p>
+                  <p>Distance de la salle: 500m</p>
+                  <p> Contact : www.relais-de-broceliande.fr</p>
+                </td>
+              </tr>
+              <tr>
+                <td><p>Pif</p></td>
+                <td><p>Paf</p></td>
+                <td><p>Pouf</p></td>
+                </tr>
+              <tr>
+                <td><p>Merci</p></td>
+                <td><p>pour</p></td>
+                <td><p>la bouffe</p></td>
+                </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                </tr>
+              </table>
+          </li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+    <!--- REGISTRY ENDS -->
+
+    <!--- RSVP STARTS -->
+    <section id="rsvp" class="contact">
+    
+      <h2 class="title">R.S.V.P.</h2>
+      
+      <div class="wrapper">
+
+        <div id="note">
+          <p>Nous avons très hâte de fêter ça avec vous !</p> 
+          <p>Merci de nous indiquer votre présence avant le 31 mars</p>
+        </div>
+        
+        <form action="#" method="post">
+          
+          <fieldset>
+            <h3>Serez vous à nos côtés pour ce jour important?</h3>
+            <div class="checkbox">
+              <input type="checkbox" name="check-ceremony" id="check-ceremony" >
+              <label for="check-ceremony">Je serai présent ! / Nous serons présents !</label>
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" name="check-reception" id="check-reception" >
+              <label for="check-reception">I (we) will be attending the reception.</label>
+            </div>
+          </fieldset>
+
+          <fieldset id="guests">
+            <h3>Guest Details:</h3>
+            <input type="text"  id="adults" name="adults" placeholder="Number of Adult Guests*">
+            <input type="text"  id="children" name="children" placeholder="Number of Children">
+          </fieldset>
+          
+          <fieldset>
+            <h3>Informations personnelles:</h3>
+            <input type="text" id="name" name="name" placeholder="Votre nom*">
+            <input type="email" id="email" name="email" placeholder="Votre E-mail*">
+            <textarea name="message" class="form-message" id="message" placeholder="Vous voulez nous laissez un petit mot ?"></textarea>
+          </fieldset>
+          
+          <input type="submit" class="submit" id="send" value="Envoyer">
+          
+        </form>
+        
+        <h3>Ou nous contacter directement :</h3>
+        <div class="contact-details contact-details-1">
+          <h4>Alexandra</h4>
+          <p>06 19 86 44 00</p>
+          <p>
+            <a href="mailto:minier.alex@mail.com?subject=RSVP">minier.alex@mail.com</a>
+          </p>
+        </div>
+        <div class="contact-details contact-details-2">
+          <h4>Boris</h4>
+          <p>06 10 23 45 79</p>
+          <p>
+            <a href="mailto:boris.moriniere@mail.com?subject=RSVP">boris.moriniere@mail.com</a>
+          </p>
+        </div>
+          
+      </div>
+        
+    </section>
+    <!--- RSVP ENDS -->
+			
+    <!-- FOOTER STARTS -->
+    <footer id="footer">	
+      <p class="copyright"> &copy; 2014 <a href="#">Studio Minière.</a> Tout droits réservés.</p>
+    </footer>
+    <!-- FOOTER ENDS -->
+			
+	</div>	
+  <!--- MAIN CONTENT ENDS -->
+		
 </body>
 </html>
