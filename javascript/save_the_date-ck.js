@@ -161,7 +161,7 @@ var save_the_date = {
     var e = this,
       t = new Date;
     e.secondsDiff = Math.floor((e.weddingDate.getTime() - t.getTime()) / 1e3);
-    var n = 'dans <span id="days"></span> ' + e.option.labels[0] + '  <span id="hours"></span> ' + e.option.labels[1] + '  <span id="minutes"></span> ' + e.option.labels[2] + '  <small><span id="seconds"></span> ' + e.option.labels[3] + "</small>";
+    var n = '<FONT COLOR=#fff >dans</FONT> <span id="days"></span> ' + '<FONT COLOR=#fff >' + e.option.labels[0] + '</FONT>' + '  <span id="hours"></span> ' + '<FONT COLOR=#fff >' + e.option.labels[1] + '</FONT>' + '  <span id="minutes"></span> ' + '<FONT COLOR=#fff >' + e.option.labels[2] + '</FONT>' + '  <small><span id="seconds"></span> ' + '<FONT COLOR=#fff >' + e.option.labels[3]+ '</FONT>' + "</small>";
     $("#timer").html(n)
   },
   doCountDown: function()

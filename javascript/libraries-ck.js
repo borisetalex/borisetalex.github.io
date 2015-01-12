@@ -1447,7 +1447,7 @@ var GMaps = function(e)
       wrapCSS: "",
       arrows: !0,
       // closeBtn: !0,
-      closeBtn: !1,      // remove close button
+      closeBtn: !0,      // remove close button
       closeClick: !1,
       nextClick: !1,
       mouseWheel: !0,
