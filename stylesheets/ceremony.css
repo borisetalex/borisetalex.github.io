@@ -1,0 +1,36 @@
+#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
+	color: #FFFFFF;
+}
+#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
+	color: #393939;
+}
+#top .content #rsvp .wrapper #note font p {
+	font-size: 18px;
+}
+#top .content #rsvp .wrapper #note font p {
+	font-size: 20px;
+}
+#top .content #rsvp .wrapper #note font p {
+	font-size: 24px;
+}
+#top .content #video p center {
+	font-size: 22px;
+}
+body,td,th {
+	font-family: BenchNine, "Arial Narrow", sans-serif;
+	font-size: 22px;
+	text-align: left;
+	margin-top: 0px;
+}
+.ceremony {
+	font-size: 24px;
+}
+#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
+	font-size: 16px;
+}
+#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
+	font-size: 20px;
+}
+#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
+	font-size: 24px;
+}

@@ -1,0 +1,62 @@
+/* Version desktop */
+table#accomodation { 
+  margin: 0 auto;
+  border-collapse: collapse;
+  /*font-family: Agenda-Light, sans-serif;*/
+  font-weight: 100; 
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  text-rendering: optimizeLegibility;
+  border-radius: 5px; 
+}
+table#accomodation caption { 
+  font-size: 2rem; color: #444;
+  margin: 1rem;
+  /*background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/miyazaki.png), url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/miyazaki2.png); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center left, center right; 
+}
+table#accomodation thead th { font-weight: 600; }
+table#accomodation thead th, table#accomodation tbody td { 
+  padding: .8rem; font-size: 1.4rem;
+}
+table#accomodation tbody td { 
+  padding: .8rem; font-size: 1.4rem;
+  color: #444; background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+table#accomodation tbody tr:not(:last-child) { 
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;  
+}
+table#accomodation tbody td a{
+  color: #444;
+  text-decoration: none;
+} 
+
+
+/* Version mobile */
+@media screen and (max-width: 800px) {
+  table#accomodation caption { 
+    background-image: none; 
+    font-size: 2rem; 
+    color: #444; 
+  }
+  table#accomodation thead { display: none; }
+  table#accomodation tbody td { 
+    display: block; 
+    padding: .6rem;
+    text-align: center;
+  }
+  table#accomodation tbody tr td:first-child { 
+    /*background: #88b322; */
+    color: #fff;
+    background-image: url(../images/pattern-11.jpg);
+  }
+	table#accomodation tbody td:before { 
+    content: attr(accomodation-data-th); 
+    font-weight: bold;
+    /*display: inline-block;*/
+    width: 6rem; 
+  }
