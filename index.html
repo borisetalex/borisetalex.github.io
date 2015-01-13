@@ -2,6 +2,7 @@
 <html lang="fr"><head>
 <meta charset="utf-8">
 <title>Alexandra et Boris se marrient!</title>
+<meta name="robots" content="noindex">
 <meta name="description" content="Toutes les infos pratiques sur le mariage de Boris et Alexandra.">
 <meta name="author" content="Studio Minière">
 <meta name="HandheldFriendly" content="True">
@@ -16,44 +17,6 @@
 <!--   main stylesheet  -->
 <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title">
 <link id="colors" rel="stylesheet" href="stylesheets/pistachio.css" type="text/css" media="screen" title="no title">
-<!-- <style type="text/css">
-#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
-	color: #FFFFFF;
-}
-#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
-	color: #393939;
-}
-#top .content #rsvp .wrapper #note font p {
-	font-size: 18px;
-}
-#top .content #rsvp .wrapper #note font p {
-	font-size: 20px;
-}
-#top .content #rsvp .wrapper #note font p {
-	font-size: 24px;
-}
-#top .content #video p center {
-	font-size: 22px;
-}
-body,td,th {
-	font-family: BenchNine, "Arial Narrow", sans-serif;
-	font-size: 22px;
-	text-align: left;
-	margin-top: 0px;
-}
-.ceremony {
-	font-size: 24px;
-}
-#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
-	font-size: 16px;
-}
-#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
-	font-size: 20px;
-}
-#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
-	font-size: 24px;
-}
-</style> -->
 <link rel="stylesheet" type="text/css" href="stylesheets/ceremony.css">
 <link rel="stylesheet" type="text/css" href="stylesheets/table.css">
 
@@ -101,29 +64,12 @@ if ((meta = meta[meta.length - 1]) && addEvent in doc) {
 <!-- custom js class -->
 <script src="javascript/save_the_date-ck.js"></script>
 
-
 <!-- Configuration -->
-<script>
-$(document).ready(function() {
-	// init Save the Date
-	save_the_date.init({
-		weddingDate: "2015/06/20, 10:00", 
-		//Date : enter your wedding date
-    labels: ["jours", "heures", "minutes", "secondes"], 
-		//Array of strings : labels of time units
-		sendServerMessages: ["Merci! Votre message a bien été transmis à Alexandra et Boris.", "Désolé, une erreur est survenue et votre message n'a pas pu être transmis à Alexandra et Boris"],
-		//Array of strings : Messages from the server on send
-		
-		gallery : ["images/gallery/1.JPG", "images/gallery/2.jpg", "images/gallery/3.jpg", "images/gallery/4.jpg", "images/gallery/5.jpg", "images/gallery/6.jpg", "images/gallery/7.JPG", "images/gallery/8.jpg", "images/gallery/9.jpg", "images/gallery/10.JPG", "images/gallery/11.JPG", "images/gallery/12.JPG", "images/gallery/13.JPG", "images/gallery/14.jpg", "images/gallery/15.jpg"],
-		//Array image pathes
-		titles : ['Plage de Demre en Turquie', 'Annecy, sur le lac', 'Station de Bonascre, Pyrénées', 'Stop dans la puna, Argentine', 'Quebrada de las Flechas, Argentina', 'Salinas Gandes, Argentina', 'Sacré Soirée', 'Sur les toits de Paris', 'Grand Canyon-USA', 'Grand saut à Monument Valley, USA', 'YellowStone, USA', 'Death Valley, USA', 'Rando neigne près de Grenoble', 'Trek dans les Annapurnas, Nepal', 'Cats in London' ],
-		//Array of strings : corresponding titles
-		});	
-});
-</script>
+<script src="javascript/config.js"></script>
 
 <script src="javascript/init-ck.js" type="text/javascript" charset="utf-8"></script>
 
+<!-- Responsive table -->
 <script src="javascript/table.js"></script>
 
 <!-- JAVASCRIPT ENDS -->
@@ -141,7 +87,6 @@ $(document).ready(function() {
 		  <a class="to-scroll" href="#ceremony">Cérémonie</a>
 			<a class="to-scroll" href="#registry">Hébergement</a>
 			<a href="#" id="gallery"> Photos</a>
-          <!--- <a class="to-scroll" href="#pictures">Photos</a> -->
 			<a class="to-scroll" href="#rsvp">RSVP/Contact</a>			
 
           <div class="effect"></div>
@@ -227,209 +172,14 @@ $(document).ready(function() {
     </section>
     <!-- CEREMONY SECTION ENDS -->
     
-    <!--- PICTURES SECTION STARTS -->	
-    <!-- <section id="video">
-      <iframe width="480" height="360" src="//www.youtube.com/embed/ikywdi-FDD4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-    </section> -->
-    <!-- PICTURES SECTION ENDS -->
-    
-    <!--- PICTURES SECTION STARTS -->	
-    <section id="pictures">
-      <!---<div style='position: relative; padding-bottom: 41%; height: 0; overflow: hidden;'>
-        <iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=40&size=big&setId=72157649456379836&click=true&trans=1&theme=1&thumbnails=1&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0' style='width:100%; height:100%; position: absolute; top:0; left:0;'>
-        </iframe>
-      </div>-->
-    </section>
-    <!-- PICTURES SECTION ENDS -->
-    
 
-    <!--- REGISTRY STARTS -->	
-    <!-- <section id="registry" class="registry">
-      <div class= "wrapper" >
-        <h2 class="title"> </h2>
-        <p><img src="images/logo.png" alt="logo" width="90"></p>
-        <h2 class="title">Hébérgement</h2>
-        <h3>Hôtels, chambres d'hôtes et gites</h3>
-        <p>Vous trouverez ci-dessous une liste des possibilités de logement à proximité du mariage:</p>
-        <ul>
-          <li>
-            <table width="922" border="0" align="center">
-              <tr align="left" valign="top">
-                <td width="249" align="left" valign="top">
-                  <img src="images/hotels/camping-paimpont-chalets-02.jpg" alt="hotel">
-                </td>
-                <td width="444"><p>CAMPING DE PAIMPONT</p>
-                <p>6 chalets de 4 à 6 couchages<br>
-                  Emplacements tentes et caravanes
-                <a href="http://camping-paimpont-broceliande.com/" target="new"><br>                
-                http://camping-paimpont-broceliande.com/</a></p></td>
-                
-                <td width="215" align="left" valign="top"><p>Distance de la salle: 200m<br>
-                  Prix:<br>
-                  - 
-                  150€ le week-end par chalet<br>
-                  - à partir de 6€ le camping</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><p><img src="images/hotels/logis-le-relais-de-broceliande.jpg" alt="hotel"></p></td>
-                <td><p>LE RELAIS DE BROCELIANDE</p>
-                  <p>Hôtel de 24 chambres dans le centre de Paimpont<br>
-                  <a href="http://www.relais-de-broceliande.fr/" target="new">http://www.relais-de-broceliande.fr/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 700m</p>
-                <p>Prix/nuit: de 105 à 148€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><p><img src="images/hotels/maison_graal.jpg" alt="hotel"></p></td>
-                <td><p>LA MAISON DU GRAAL</p>
-                <p>Gite de 2 chambres 2 personnes<br>
-                <a href="http://www.lamaisondugraal.net/" target="new">http://www.lamaisondugraal.net/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 700m</p>
-                <p>Prix/nuit: 60€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><img src="images/hotels/les ecrouettes.jpg" alt="hotel"></td>
-                <td><p>GITE DES ECROUETTES</p>
-                <p>Gite de 2 chambres 2 à 3 personnes<br>
-                  <a href="http://www.gite-des-ecrouettes-broceliande.fr/" target="new">http://www.gite-des-ecrouettes-broceliande.fr/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 800m</p>
-                <p>Prix/nuit: 50€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><img src="images/hotels/chateaudubois-03.jpg" alt="hotel"></td>
-                <td><p>LE CHATEAU DU BOIS</p>
-                <p>Chambre d'hôtes de 2 chambres 2 à 3 personnes<br>
-                <a href="http://foret-broceliande.fr/Le-Chateau-du-Bois" target="new">http://foret-broceliande.fr/Le-Chateau-du-Bois</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 800m</p>
-                <p>Prix/nuit: 50€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><img src="images/hotels/logis-ponthus-paimpont-broceliande_016.jpg" alt="hotel"></td>
-                <td><p>LOGIS DE PONTHUS</p>
-                  <p>Gite de 6 chambres 2 à 3 personnes<br>
-                <a href="http://logis-ponthus.fr/" target="new">http://logis-ponthus.fr/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 950m</p>
-                <p>Prix/nuit: 54€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><img src="images/hotels/etangPaimpont.jpg" alt="hotel"></td>
-                <td><p>GITE DE L'ETANG</p>
-                <p>Gite de 4 chambres 2 à 3 personnes<br>
-                  <a href="http://paimpont-broceliande.wifeo.com/" target="new">http://paimpont-broceliande.wifeo.com/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 1,5 km</p>
-                <p>Prix/nuit: 76€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><img src="images/hotels/corne_du_cerf_005.jpg" alt="hotel"></td>
-                <td><p>LA CORNE DU CERF</p>
-                  <p>Chambre d'hôtes de 3 chambres 2 à 3 personnes<br>
-                  <a href="http://foret-broceliande.fr/La-Corne-du-Cerf" target="new">http://foret-broceliande.fr/La-Corne-du-Cerf</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 3 km</p>
-                  <p>Prix/nuit: 53€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><img src="images/hotels/manoir_TERTRE_315314c.jpg" alt="hotel"></td>
-                <td><p>LE MANOIR DU TERTRE</p>
-                  <p>Chambre d'hôtes de 5 chambres<br>
-                  <a href="http://broceliande.manoir-du-tertre.fr/" target="new">http://broceliande.manoir-du-tertre.fr/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 4 km</p>
-                  <p>Prix/nuit: 50 à 60€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/pont_secret.jpg" alt="hotel"></td>
-                <td><p>LE PONT DU SECRET</p>
-                  <p>Gite de 4 chambres 2 à 3 personnes<br>
-                  <a href="http://www.gitepontdusecret.fr/" target="new">http://www.gitepontdusecret.fr/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 5,5 km</p>
-                  <p>Prix/nuit: 50 à 58€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/cpie-broceliande-01.jpg" alt="hotel"></td>
-                <td><p>CPIE FORET BROCELIANDE</p>
-                  <p>15 chambres de 2 à 6 lits pour des groupes de 15 personnes minimum, à Concoret<br>
-                  <a href="http://www.cpie-broceliande.fr/" target="new">http://www.cpie-broceliande.fr/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 6,5 km</p>
-                  <p>Prix/nuit: 17€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/Hotel-O2B-Aux-Berges-de-Broceliande_012.jpg" alt="hotel"></td>
-                <td><p>O2B AUX BERGES DE BROCELIANDE</p>
-                  <p>Hotel de 12 chambres situé à Beignon<br>
-                  <a href="http://hotel-broceliande.o2b.fr/" target="new">http://hotel-broceliande.o2b.fr/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 8 km</p>
-                  <p>Prix/nuit: 69€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/le bellevue.jpg" alt="hotel"></td>
-                <td><p>LE BELLEVUE</p>
-                  <p>Hotel de 14 chambres situé à Guer<br>
-                  <a href="http://www.hotel-guer.com/" target="new">http://www.hotel-guer.com/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 12 km</p>
-                  <p>Prix/nuit: 80€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/litorienn.jpg" alt="hotel"></td>
-                <td><p>AR LITORIENN</p>
-                  <p>Chambre d'hôtes de 3 chambres 2 à 4 personnes<br>
-                  <a href="http://www.arlitorienn.fr/" target="new">http://www.arlitorienn.fr/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 13,5 km</p>
-                  <p>Prix/nuit: 60 à 95€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/a loree foret.png" alt="hotel"></td>
-                <td><p>A L'OREE DE LA FORET</p>
-                  <p>Hôtel de 13 chambres, avec une suite de 5 personnes, situé à Campénéac<br>
-                  <a href="http://www.oree-foret.fr/" target="new">http://www.oree-foret.fr/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 13,5 km</p>
-                  <p>Prix/nuit: 49€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/ville_ruaud.jpg" alt="hotel"></td>
-                <td><p>LOGIS DE LA VILLE RUAUD</p>
-                  <p>Chambre d'hôtes de 3 chambres 3 à 5 personnes, situé à Augan<br>
-                  <a href="http://www.cap-broceliande.com/" target="new">http://www.cap-broceliande.com/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 21 km</p>
-                  <p>Prix/nuit: 50€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/hotel-le-cobh-ploermel-003.jpg" alt="hotel"></td>
-                <td><p>LE COBH</p>
-                  <p>Hôtel de 11 chambres 2 à 4 personnes, situé à Ploërmel<br>
-                  <a href="http://www.hotel-lecobh.com/" target="new">http://www.hotel-lecobh.com/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 22 km</p>
-                  <p>Prix/nuit: 77€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/retour_peche.jpg" alt="hotel"></td>
-                <td><p>LE RETOUR DE PECHE</p>
-                  <p>Hôtel de 11 chambres situé à Ploërmel<br>
-                  <a href="http://www.leretourdepeche.fr/" target="new">http://www.leretourdepeche.fr/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 22,5 km</p>
-                  <p>Prix/nuit: 65€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/Chambre-Deluxe-Chateau-du-Roi-Arthur-Ploermel-4-etoiles_1200.600.crop-S.photo.c2693.jpg" alt="hotel"></td>
-                <td><p>HOTEL ROI ARTHUR &amp; RESIDENCE LANCELOT</p>
-                  <p>Hotel de 46 chambres et résidences de 28 chambres, situé au bord du Lac au Ducs à Ploërmel<br>
-                  <a href="http://www.hotelroiarthur.com/" target="new">http://www.hotelroiarthur.com/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 29 km</p>
-                  <p>Prix/nuit: à partir de 86€</p></td>
-              </tr>
-            </table>
-          </li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-    </section> -->
-    
+    <!--- REGISTRY STARTS -->	    
     <section id="registry" class="registry">
       <h2 class="title">Hébérgement</h2>
       <h3>Hôtels, chambres d'hôtes et gites</h3>
       <!-- <p>Vous trouverez ci-dessous une liste des possibilités de logement à proximité du mariage:</p> -->
       <table id="accomodation">
         <!-- <caption>Liste des logements à proximité:</caption> -->
-        <!--<thead>
-        <tr><th>Film<th>Year<th>Honor -->
         <tbody>
         <tr>
         <td><a href="http://camping-paimpont-broceliande.com/" target="new"><img src="images/hotels/camping-paimpont-chalets-02.jpg"></a>
@@ -517,20 +267,6 @@ $(document).ready(function() {
     <!--- REGISTRY ENDS -->
     
     
-    <!--- VIDEOS SECTION STARTS 	
-    <section id="video" class="video">
-    <h2 class="title">Vidéos</h2>
-    <p><center>Stop-motion &quot;Save the Date&quot;</center></p>
-      <center><iframe width="480" height="360" src="http://www.youtube.com/embed/ikywdi-FDD4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-      </center>
-     
-     </section>
-     
-    <!-- VIDEOS SECTION ENDS -->
-    
-    
     <!--- RSVP STARTS -->
     <section id="rsvp" class="contact">
     
@@ -585,7 +321,7 @@ $(document).ready(function() {
         </div>
         <div class="contact-details contact-details-2">
           <h4>Boris</h4>
-          <p>06 10 23 45 79</p>
+          <p>06 76 10 30 32</p>
          
         </div>
          <p>
@@ -601,7 +337,7 @@ $(document).ready(function() {
 			
     <!-- FOOTER STARTS -->
     <footer id="footer">	
-      <p class="copyright"> &copy; 2015 Studio Minière - Tout droits réservés.</p>
+      <p class="copyright"> &copy; 2015 Studio Minière - Tous droits réservés.</p>
     </footer>
     <!-- FOOTER ENDS -->
 			
