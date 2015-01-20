@@ -269,46 +269,55 @@ if ((meta = meta[meta.length - 1]) && addEvent in doc) {
     
     <!--- RSVP STARTS -->
     <section id="rsvp" class="contact">
-    
-      <h2 class="title">R.S.V.P.</h2>
-      
-      <div class="wrapper">
+	  
+	  <h2 class="title">R.S.V.P.</h2>
+	  
+	  <div class="wrapper">
 
         <div id="note"><FONT color="#393939"><p>Nous avons hâte de fêter notre mariage avec vous !</p> 
         <p>Merci de nous confirmer votre présence avant le 31 mars.</p></FONT>
         </div>
         
-        <form action="#" method="post">
+		<form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+		  action="https://borisetalex.wufoo.com/forms/z2y4a6n0a0ooox/#public">
           
           <fieldset>
             <h3>Serez vous à nos côtés le 20 juin 2015?</h3>
             
             <div class="checkbox">
-              <input type="checkbox" name="check-positive" id="check-positive" >
-              <label for="check-positive">OUI, nous serons présents !</label>
+			  <input id="Field5" name="Field5" type="checkbox" class="field checkbox" value="OUI, nous serons présents !">
+              <label for="Field5">OUI, nous serons présents !</label>
             </div>
             <div class="checkbox">
               <p>
-                <input type="checkbox" name="check-negative" id="check-negative" >
-                <label for="check-negative">NON, nous ne pourrons pas être là.</label>
+				<input id="Field6" name="Field6" type="checkbox" class="field checkbox" value="NON, nous ne pourrons pas être là.">
+                <label for="Field6">NON, nous ne pourrons pas être là.</label>
               </p>
             </div>
           </fieldset>
 
           <fieldset id="guests">
             <h3>Infos Invités:</h3>
-            <input type="text"  id="adults" name="adults" placeholder="Nombre d'adultes*">
-            <input type="text"  id="children" name="children" placeholder="Nombre d'enfants">
+			
+			<input id="Field2" name="Field2" type="text" class="field text nospin medium" placeholder="Nombre d'adultes (à partir de 13 ans)"  tabindex="5" onkeyup=""> 
+			<input id="Field3" name="Field3" type="text" class="field text nospin medium" placeholder="Nombre d'enfants (de 3 à 13 ans)"  tabindex="6" onkeyup=""> 
           </fieldset>
           
           <fieldset>
             <h3>Message:</h3>
-            <input type="text" id="name" name="name" placeholder="Vos noms & prénoms*">
-            <input type="email" id="email" name="email" placeholder="Votre e-mail*">
-            <textarea name="message" class="form-message" id="message" placeholder="Laissez-nous un petit mot! (...si nécessaire, merci de nous indiquer si vous êtes soumis à un régime particulier.)"></textarea>
+            <!--<input type="text" id="name" name="name" placeholder="Vos noms & prénoms*">-->
+			<input id="Field1" name="Field1" type="text" class="field text medium" placeholder="Vos noms & prénoms*" maxlength="255" tabindex="1" onkeyup=""       required />
+			
+            <!--<input type="email" id="email" name="email" placeholder="Votre e-mail*">-->
+			<input id="Field106" name="Field106" type="email" spellcheck="false" class="field text medium" placeholder="Votre e-mail*" maxlength="255" tabindex="2"       required />
+			
+            <!--<textarea name="message" class="form-message" id="message" placeholder="Laissez-nous un petit mot! (...si nécessaire, merci de nous indiquer si vous êtes soumis à un régime particulier.)"></textarea>-->
+			<textarea id="Field4" name="Field4" class="field textarea medium" placeholder="Laissez-nous un petit mot! (...si nécessaire, merci de nous indiquer si vous êtes soumis à un régime particulier.)" spellcheck="true" rows="10" cols="50" tabindex="7" onkeyup=""></textarea>
           </fieldset>
           
-          <input type="submit" class="submit" id="send" value="Envoyer">
+          <!--<input type="submit" class="submit" id="send" value="Envoyer">-->
+		  <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Soumettre" />
+		  <input type="hidden" id="idstamp" name="idstamp" value="er0+aUC30uT7yhZt7BsgnOF2a2rAMXX4Zo7arMI5Y3A=" />
           
         </form>
         
@@ -330,6 +339,7 @@ if ((meta = meta[meta.length - 1]) && addEvent in doc) {
          <p><a href="mailto:borisetalex@mail.com?subject=RSVP">borisetalex@gmail.com</a>
          </p>  
       </div>
+	  
         
     </section>
     <!--- RSVP ENDS -->
