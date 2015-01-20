@@ -189,11 +189,12 @@ var save_the_date = {
       };
     t()
   },
+  
   rsvp: function()
   {
     var e = this;
-    $("#check-reception:checked").parent().parent().next("#guests").show();
-    $("#check-reception").change(function()
+    $("#check-positive:checked").parent().parent().next("#guests").show();
+    $("#check-positive").change(function()
     {
       $("#guests").slideToggle("slow")
     });
@@ -210,7 +211,7 @@ var save_the_date = {
       var t = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/,
         n = $("#email").val(),
         r = $("#name").val(),
-        i = $("#check-reception").is(":checked"),
+        i = $("#check-positive").is(":checked"),
         s = $("#adults").val(),
         o = !1;
       $(".error").removeClass("error");
@@ -264,6 +265,7 @@ var save_the_date = {
     })
   }
 };
+
 (function()
 {
   var e = 0,
