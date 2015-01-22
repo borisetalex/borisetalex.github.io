@@ -8,9 +8,10 @@ $(document).ready(function() {
 		sendServerMessages: ["Merci! Votre message a bien été transmis à Alexandra et Boris.", "Désolé, une erreur est survenue et votre message n'a pas pu être transmis à Alexandra et Boris"],
 		//Array of strings : Messages from the server on send
 		
-		gallery : ["images/gallery/1.JPG", 
-               "images/gallery/2.jpg", 
-               "images/gallery/3.jpg", 
+		gallery : [
+			   //"images/gallery/1.JPG", 
+               //"images/gallery/2.jpg", 
+               //"images/gallery/3.jpg", 
                "images/gallery/4.jpg", 
                "images/gallery/5.jpg", 
                "images/gallery/6.jpg", 
@@ -24,12 +25,13 @@ $(document).ready(function() {
                "images/gallery/14.jpg", 
                "images/gallery/15.jpg"],
 		//Array image pathes
-		titles : ['Plage de Demre, Turquie', 
-              'Au bord du lac, Annecy', 
-              'Station de Bonascre, Pyrénées', 
-              'Stop dans la puna, Argentine', 
-              'Quebrada de las Flechas, Argentina', 
-              'Salinas Gandes, Argentina', 
+		titles : [
+		      //'Plage de Demre, Turquie', 
+              //'Au bord du lac, Annecy', 
+              //'Station de Bonascre, Pyrénées', 
+              'Stop dans la Puna, Argentine', 
+              'Quebrada de las Flechas, Argentine', 
+              'Salinas Gandes, Argentine', 
               'Sacré Soirée', 
               'Sur les toits de Paris', 
               'Grand Canyon, USA', 
