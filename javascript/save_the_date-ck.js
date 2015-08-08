@@ -189,34 +189,81 @@ var save_the_date = {
       };
     t()
   },
-  
   rsvp: function()
   {
-    var e = this;	
-    $("#Field5:checked").parent().parent().next("#guests").show();
-	
-	$("#Field6").change(function()
+    var e = this;
+    $("#check-reception:checked").parent().parent().next("#guests").show();
+    $("#check-reception").change(function()
     {
-	  if( $("#Field5").is(":checked") )
-	  {
-		$("#Field5").attr("checked", false)
-		$("#guests").slideToggle()
-	  }
-    });
-	
-    $("#Field5").change(function()
-    {
-	  if( $("#Field6").is(":checked") )
-	  {
-		$("#Field6").attr("checked", false)
-		$("#guests").hide()
-	  }
       $("#guests").slideToggle("slow")
     });
-	
+    if (!Modernizr.input.placeholder)
+    {
+      var t = ["#name", "#email", "textarea", "#adults", "#children"];
+      $(t).each(function(e, t)
+      {
+        $(t).val($(t).attr("placeholder"))
+      })
+    }
+    $("#rsvp form").submit(function()
+    {
+      var t = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/,
+        n = $("#email").val(),
+        r = $("#name").val(),
+        i = $("#check-reception").is(":checked"),
+        s = $("#adults").val(),
+        o = !1;
+      $(".error").removeClass("error");
+      if (i && s !== undefined && (s === "" || s === $("#adults").attr("placeholder")))
+      {
+        $("#adults").addClass("error");
+        o = !0
+      }
+      if (r === "" || r === $("#name").attr("placeholder"))
+      {
+        $("#name").addClass("error");
+        o = !0
+      }
+      if (n === "" || t.test(n) === !1)
+      {
+        $("#email").addClass("error");
+        o = !0
+      }
+      if (!o)
+      {
+        var u = $(this),
+          a = $(u).serialize(),
+          f = $("#note");
+        $.ajax(
+        {
+          type: "POST",
+          url: "send.php",
+          data: a,
+          success: function(t)
+          {
+            var n = "";
+            switch (t)
+            {
+              case "success":
+                $(u).hide();
+                $("html, body").animate(
+                {
+                  scrollTop: $(document).height()
+                }, "slow");
+                n = e.option.sendServerMessages[0];
+                break;
+              case "error":
+                n = e.option.sendServerMessages[1]
+            }
+            f.html(n)
+          }
+        });
+        return !1
+      }
+      return !1
+    })
   }
 };
-
 (function()
 {
   var e = 0,
