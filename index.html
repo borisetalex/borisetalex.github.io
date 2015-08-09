@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="fr"><head>
 <meta charset="utf-8">
-<title>Alexandra et Boris se marrient!</title>
+<title>Alexandra et Boris se marient!</title>
+<meta name="robots" content="noindex">
 <meta name="description" content="Toutes les infos pratiques sur le mariage de Boris et Alexandra.">
 <meta name="author" content="Studio Minière">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+
+<!--[if lte IE 8]>
+<div style='border: 1px solid #F7941D; background: #FEEFDA; text-align: center; clear: both; height: 75px; position: relative;'>
+<div style='position: absolute; right: 3px; top: 3px; font-family: courier new; font-weight: bold;'><a href='#' onclick='javascript:this.parentNode.parentNode.style.display="none"; return false;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-cornerx.jpg' style='border: none;' alt='Close this notice'/></a></div>
+<div style='width: 640px; margin: 0 auto; text-align: left; padding: 0; overflow: hidden; color: black;'>
+  <div style='width: 75px; float: left;'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-warning.jpg' alt='Warning!'/></div>
+  <div style='width: 275px; float: left; font-family: Arial, sans-serif;'>
+	<div style='font-size: 14px; font-weight: bold; margin-top: 12px;'>Vous utilisez un navigateur dépassé depuis au moins 6 ans!</div>
+	<div style='font-size: 12px; margin-top: 6px; line-height: 12px;'>Pour une meilleure naviguation web et une meilleure sécurité, prenez le temps de mettre votre navigateur à jour.</div>
+  </div>
+  <div style='width: 75px; float: left;'><a href='http://fr.www.mozilla.com/fr/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-firefox.jpg' style='border: none;' alt='Get Firefox 3.5'/></a></div>
+  <div style='width: 75px; float: left;'><a href='http://www.microsoft.com/downloads/details.aspx?FamilyID=341c2ad5-8c3d-4347-8c03-08cdecd8852b&DisplayLang=fr' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-ie8.jpg' style='border: none;' alt='Get Internet Explorer 8'/></a></div>
+  <div style='width: 73px; float: left;'><a href='http://www.apple.com/fr/safari/download/' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-safari.jpg' style='border: none;' alt='Get Safari 4'/></a></div>
+  <div style='float: left;'><a href='http://www.google.com/chrome?hl=fr' target='_blank'><img src='http://www.ie6nomore.com/files/theme/ie6nomore-chrome.jpg' style='border: none;' alt='Get Google Chrome'/></a></div>
+</div>
+</div>
+<![endif]-->
+
+
+<!--[if lt IE 9]>
+   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
 <!-- CSS STARTS -->
+
+<link rel="icon" type="image/png" href="images/small_logo.png" />
 
 <!--   Google fonts  -->
 <link href='http://fonts.googleapis.com/css?family=Alex+Brush' rel='stylesheet' type='text/css'>
@@ -16,44 +43,8 @@
 <!--   main stylesheet  -->
 <link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title">
 <link id="colors" rel="stylesheet" href="stylesheets/pistachio.css" type="text/css" media="screen" title="no title">
-<style type="text/css">
-#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
-	color: #FFFFFF;
-}
-#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
-	color: #393939;
-}
-#top .content #rsvp .wrapper #note font p {
-	font-size: 18px;
-}
-#top .content #rsvp .wrapper #note font p {
-	font-size: 20px;
-}
-#top .content #rsvp .wrapper #note font p {
-	font-size: 24px;
-}
-#top .content #video p center {
-	font-size: 22px;
-}
-body,td,th {
-	font-family: BenchNine, "Arial Narrow", sans-serif;
-	font-size: 22px;
-	text-align: left;
-	margin-top: 0px;
-}
-.ceremony {
-	font-size: 24px;
-}
-#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
-	font-size: 16px;
-}
-#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
-	font-size: 20px;
-}
-#top .content #ceremony .wrapper.clearfix .ceremony-1 p {
-	font-size: 24px;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="stylesheets/ceremony.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/table.css">
 
 <!-- CSS ENDS -->
 
@@ -99,32 +90,19 @@ if ((meta = meta[meta.length - 1]) && addEvent in doc) {
 <!-- custom js class -->
 <script src="javascript/save_the_date-ck.js"></script>
 
-
 <!-- Configuration -->
-<script>
-$(document).ready(function() {
-	// init Save the Date
-	save_the_date.init({
-		weddingDate: "2015/06/20, 10:00", 
-		//Date : enter your wedding date
-    labels: ["jours", "heures", "minutes", "secondes"], 
-		//Array of strings : labels of time units
-		sendServerMessages: ["Merci! Votre message a bien été transmis à Alexandra et Boris.", "Désolé, une erreur est survenue et votre message n'a pas pu être transmis à Alexandra et Boris"],
-		//Array of strings : Messages from the server on send
-		
-		gallery : ["images/gallery/1.jpg", "images/gallery/2.jpg", "images/gallery/3.jpg", "images/gallery/4.jpg", "images/gallery/5.jpg", "images/gallery/6.jpg", "images/gallery/7.jpg", "images/gallery/8.jpg", "images/gallery/9.jpg", "images/gallery/10.jpg", "images/gallery/11.jpg", "images/gallery/12.jpg", "images/gallery/13.jpg", "images/gallery/14.jpg", "images/gallery/15.jpg", "images/gallery/16.jpg"],
-		//Array image pathes
-		//titles : ['Plage de Demre en Turquie', 'Annecy, sur le lac', 'Station de Bonascre, Pyrénées', 'Stop dans la puna, Argentine', 'Quebrada de las Flechas, Argentina', 'Salinas Gandes, Argentina', 'Sacré Soirée', 'Sur les toits de Paris', 'Grand Canyon-USA', 'Grand saut à Monument Valley, USA', 'YellowStone, USA', 'Death Valley, USA', 'Rando neigne près de Grenoble', 'Trek dans les Annapurnas, Nepal', 'Cats in London' ],
-		//Array of strings : corresponding titles
-		});	
-});
-</script>
+<script src="javascript/config.js"></script>
 
 <script src="javascript/init-ck.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Responsive table -->
+<script src="javascript/table.js"></script>
 
 <!-- JAVASCRIPT ENDS -->
 
 </head>
+
+
 <!--[if lt IE 9]> <body  id="top" class="ie-fix"><![endif]-->	
 <!--[if (gt IE 8)|!(IE)]><!--> <body  id="top"><!--<![endif]-->
 	
@@ -133,22 +111,31 @@ $(document).ready(function() {
 		<div class="nav">
 			<a  id="full-menu" href="#">&equiv;</a>
 			<a class="active to-scroll" href="#top">Accueil</a>
-			<a class="to-scroll" href="#about">BIENVENUE</a>
+			<a class="to-scroll" href="#about">Bienvenue</a>
 		  <a class="to-scroll" href="#ceremony">Cérémonie</a>
 			<a class="to-scroll" href="#registry">Hébergement</a>
 			<a href="#" id="gallery"> Photos</a>
-          <!--- <a class="to-scroll" href="#pictures">Photos</a> -->
-			<a class="to-scroll" href="#rsvp">Contact</a>			
+			<a class="to-scroll" href="#rsvp">RSVP/Contact</a>			
 
-            <div class="effect"></div>
-	  </div>
+          <div class="effect"></div>
+		</div>
 	</div>
 	<!--- NAVIGATION ENDS -->
 	
 	<!-- HEADER STARTS -->
   <header class="header" role="banner">
     <h1 class="wrapper">Alexandra <FONT COLOR=#99cc33 >& </FONT> Boris</h1>
-    <p><img src="images/couple_web.jpg" alt="Alexandra &amp; Boris"></p>
+    
+    <div class="images">
+      <span class="her pile"></span>
+      <span class="him pile"></span>
+    </div>
+    
+    <h2>
+      <span class="event">se marient...</span>
+      <span class="date">le 20 juin 2015</span>
+      <span id="timer" class="timer"></span>
+    </h2>		
   </header>	
   <!-- HEADER ENDS -->
 	
@@ -159,20 +146,21 @@ $(document).ready(function() {
     <section id="about" class="about clearfix">
       <div class="they">
         <p>
-        <strong><img class="imagesilh" src="images/Silhouet_maries.png" alt="silhouette"> BIENVENUE </strong> sur le site de notre mariage!        </p>
-        <p> Nous vous remercions d'avoir partagé avec nous cette belle journée du 20 juin 2015 et de nous avoir accompagné de votre gentillesse, de vos sourires et même parfois de vos larmes (de joie!)<br>
+          <strong><img class="imagesilh" src="images/Silhouet.png" alt="silhouette"> BIENVENUE </strong> sur le site de notre mariage!<br>
+        Vous y trouverez toutes les infos pratiques pour nous rejoindre le jour J et ne pas vous perdre dans les méandres de la forêt de Brocéliande! Les plans d'accès sont accessibles depuis la rubrique &quot;CEREMONIE&quot; et une liste de logements à proximité de la fête est disponible dans &quot;HEBERGEMENT&quot;.<br>
         </p>
-        <p>Les photos (officielles!) de notre photographe J.F Guillon sont présentes sur: <a href="http://picsurge.com/hkeyYY">http://picsurge.com/hkeyYY</a>. Le mot de passe a été envoyé par mail. En cas d'oubli, n'hésitez pas à nous le demander sur <a href="mailto:borisetalex@mail.com?subject=RSVP">borisetalex@gmail.com</a></p>
-        <p><br>
-        Ce mot de passe vous permet également d'accéder à 2 autres galleries: </p>
-        <p>- la galerie du Photomaton où certains s'en sont donné à coeur joie pour notre plus grand plaisir! <a href="http://picsurge.com/g/TamdTq">http://picsurge.com/g/TamdTq</a>.<br>
+        <p><strong>Nous espérons</strong> que vous serez parmi nous pour partager cette belle journée. Merci de nous confirmer votre présence en cliquant sur &quot;RSVP/CONTACT&quot;. <br>
         </p>
-        <p>- la galerie communautaire où nous vous invitons à partager vos photos: <a href="https://picsurge.com/VCsvB7">https://picsurge.com/VCsvB7</a><a href="http://www.tourismebretagne.com"></a>. Dans le Menu (en haut à gauche), cliquez sur &quot;Add Images&quot;, créez un identifiant et lancez le chargement de vos photos!</p>
-        <p>Merci! </p>
+		
+		<p>Pour ceux qui souhaiteraient prolonger leur venue en Bretagne pour découvrir la région, vous trouverez de nombreuses infos sur: <br>
+        - <a href="http://tourisme-broceliande.bzh" target="_blank">http://tourisme-broceliande.bzh</a><br>
+        - <a href="http://www.tourismebretagne.com" target="_blank">http://www.tourismebretagne.com</a></p>
+        <p>A très vite! </p>
         
         <p><center></center></p>
-      <center>
+      <center><iframe width="480" height="360" src="http://www.youtube.com/embed/ikywdi-FDD4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
       </center>
+	  
       </div>
     </section>
     <!-- ABOUT SECTION ENDS -->
@@ -190,11 +178,10 @@ $(document).ready(function() {
       
       <div  class="wrapper clearfix">
         
-          <h2 class="title">20.06.2015</h2> 
-          
-          <div class="ceremony-1">
-            
-              <img src="images/mairie.png" width="300" height="300" alt="Mairie">
+        <h2 class="title">20.06.2015</h2> 
+        
+        <div class="ceremony-1">
+            <img src="images/mairie.png" width="300" height="300" alt="Mairie">
             </span>
             <h3>Mairie</h3>
             <p>10H00</p>
@@ -206,7 +193,7 @@ $(document).ready(function() {
           <img src="images/salle.png" width="300" height="300" alt="Reception">
           </span>
           <h3>Cérémonie &amp; Réception</span></span></h3>
-          <p>11H30</p>
+          <p>11H30 - 02h30</p>
           <p>Espace de l'étang Bleu - 35380 Paimpont </p>
           <a class="map" data-lat="48.024247" data-lng="-2.173345" data-title="Ceremonie" >Localiser sur Google Maps</a>	
           <div class="pile my_map">
@@ -218,237 +205,153 @@ $(document).ready(function() {
     </section>
     <!-- CEREMONY SECTION ENDS -->
     
-    <!--- PICTURES SECTION STARTS -->	
-    <!-- <section id="video">
-      <iframe width="480" height="360" src="//www.youtube.com/embed/ikywdi-FDD4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-    </section> -->
-    <!-- PICTURES SECTION ENDS -->
-    
-    <!--- PICTURES SECTION STARTS -->	
-    <section id="pictures">
-      <!---<div style='position: relative; padding-bottom: 41%; height: 0; overflow: hidden;'>
-        <iframe id='iframe' src='http://flickrit.com/slideshowholder.php?height=40&size=big&setId=72157649456379836&click=true&trans=1&theme=1&thumbnails=1&transition=0&layoutType=responsive&sort=0' scrolling='no' frameborder='0' style='width:100%; height:100%; position: absolute; top:0; left:0;'>
-        </iframe>
-      </div>-->
-    </section>
-    <!-- PICTURES SECTION ENDS -->
-    
 
-    <!--- REGISTRY STARTS -->	
+    <!--- REGISTRY STARTS -->	    
     <section id="registry" class="registry">
-      <div class= "wrapper" >
-        <h2 class="title"> </h2>
-        <p><img src="images/logo.png" alt="logo" width="90"></p>
-        <h2 class="title">Hébérgement</h2>
-        <h3>Hôtels, chambres d'hôtes et gites</h3>
-        <p>Vous trouverez ci-dessous une liste des possibilités de logement à proximité du mariage:</p>
-        <ul>
-          <li>
-            <table width="922" border="0" align="center">
-              <tr align="left" valign="top">
-                <td width="249" align="left" valign="top">
-                  <img src="images/hotels/camping-paimpont-chalets-02.jpg" alt="hotel">
-                </td>
-                <td width="444"><p>CAMPING DE PAIMPONT</p>
-                <p>6 chalets de 4 à 6 couchages<br>
-                  Emplacements tentes et caravanes
-                <a href="http://camping-paimpont-broceliande.com/" target="new"><br>                
-                http://camping-paimpont-broceliande.com/</a></p></td>
-                
-                <td width="215" align="left" valign="top"><p>Distance de la salle: 200m<br>
-                  Prix:<br>
-                  - 
-                  150€ le week-end par chalet<br>
-                  - à partir de 6€ le camping</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><p><img src="images/hotels/logis-le-relais-de-broceliande.jpg" alt="hotel"></p></td>
-                <td><p>LE RELAIS DE BROCELIANDE</p>
-                  <p>Hôtel de 24 chambres dans le centre de Paimpont<br>
-                  <a href="http://www.relais-de-broceliande.fr/" target="new">http://www.relais-de-broceliande.fr/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 700m</p>
-                <p>Prix/nuit: de 105 à 148€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><p><img src="images/hotels/maison_graal.jpg" alt="hotel"></p></td>
-                <td><p>LA MAISON DU GRAAL</p>
-                <p>Gite de 2 chambres 2 personnes<br>
-                <a href="http://www.lamaisondugraal.net/" target="new">http://www.lamaisondugraal.net/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 700m</p>
-                <p>Prix/nuit: 60€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><img src="images/hotels/les ecrouettes.jpg" alt="hotel"></td>
-                <td><p>GITE DES ECROUETTES</p>
-                <p>Gite de 2 chambres 2 à 3 personnes<br>
-                  <a href="http://www.gite-des-ecrouettes-broceliande.fr/" target="new">http://www.gite-des-ecrouettes-broceliande.fr/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 800m</p>
-                <p>Prix/nuit: 50€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><img src="images/hotels/chateaudubois-03.jpg" alt="hotel"></td>
-                <td><p>LE CHATEAU DU BOIS</p>
-                <p>Chambre d'hôtes de 2 chambres 2 à 3 personnes<br>
-                <a href="http://foret-broceliande.fr/Le-Chateau-du-Bois" target="new">http://foret-broceliande.fr/Le-Chateau-du-Bois</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 800m</p>
-                <p>Prix/nuit: 50€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><img src="images/hotels/logis-ponthus-paimpont-broceliande_016.jpg" alt="hotel"></td>
-                <td><p>LOGIS DE PONTHUS</p>
-                  <p>Gite de 6 chambres 2 à 3 personnes<br>
-                <a href="http://logis-ponthus.fr/" target="new">http://logis-ponthus.fr/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 950m</p>
-                <p>Prix/nuit: 54€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><img src="images/hotels/etangPaimpont.jpg" alt="hotel"></td>
-                <td><p>GITE DE L'ETANG</p>
-                <p>Gite de 4 chambres 2 à 3 personnes<br>
-                  <a href="http://paimpont-broceliande.wifeo.com/" target="new">http://paimpont-broceliande.wifeo.com/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 1,5 km</p>
-                <p>Prix/nuit: 76€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><img src="images/hotels/corne_du_cerf_005.jpg" alt="hotel"></td>
-                <td><p>LA CORNE DU CERF</p>
-                  <p>Chambre d'hôtes de 3 chambres 2 à 3 personnes<br>
-                  <a href="http://foret-broceliande.fr/La-Corne-du-Cerf" target="new">http://foret-broceliande.fr/La-Corne-du-Cerf</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 3 km</p>
-                  <p>Prix/nuit: 53€</p></td>
-              </tr>
-              <tr>
-                <td align="left" valign="top"><img src="images/hotels/manoir_TERTRE_315314c.jpg" alt="hotel"></td>
-                <td><p>LE MANOIR DU TERTRE</p>
-                  <p>Chambre d'hôtes de 5 chambres<br>
-                  <a href="http://broceliande.manoir-du-tertre.fr/" target="new">http://broceliande.manoir-du-tertre.fr/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 4 km</p>
-                  <p>Prix/nuit: 50 à 60€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/pont_secret.jpg" alt="hotel"></td>
-                <td><p>LE PONT DU SECRET</p>
-                  <p>Gite de 4 chambres 2 à 3 personnes<br>
-                  <a href="http://www.gitepontdusecret.fr/" target="new">http://www.gitepontdusecret.fr/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 5,5 km</p>
-                  <p>Prix/nuit: 50 à 58€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/cpie-broceliande-01.jpg" alt="hotel"></td>
-                <td><p>CPIE FORET BROCELIANDE</p>
-                  <p>15 chambres de 2 à 6 lits pour des groupes de 15 personnes minimum, à Concoret<br>
-                  <a href="http://www.cpie-broceliande.fr/" target="new">http://www.cpie-broceliande.fr/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 6,5 km</p>
-                  <p>Prix/nuit: 17€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/Hotel-O2B-Aux-Berges-de-Broceliande_012.jpg" alt="hotel"></td>
-                <td><p>O2B AUX BERGES DE BROCELIANDE</p>
-                  <p>Hotel de 12 chambres situé à Beignon<br>
-                  <a href="http://hotel-broceliande.o2b.fr/" target="new">http://hotel-broceliande.o2b.fr/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 8 km</p>
-                  <p>Prix/nuit: 69€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/le bellevue.jpg" alt="hotel"></td>
-                <td><p>LE BELLEVUE</p>
-                  <p>Hotel de 14 chambres situé à Guer<br>
-                  <a href="http://www.hotel-guer.com/" target="new">http://www.hotel-guer.com/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 12 km</p>
-                  <p>Prix/nuit: 80€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/litorienn.jpg" alt="hotel"></td>
-                <td><p>AR LITORIENN</p>
-                  <p>Chambre d'hôtes de 3 chambres 2 à 4 personnes<br>
-                  <a href="http://www.arlitorienn.fr/" target="new">http://www.arlitorienn.fr/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 13,5 km</p>
-                  <p>Prix/nuit: 60 à 95€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/a loree foret.png" alt="hotel"></td>
-                <td><p>A L'OREE DE LA FORET</p>
-                  <p>Hôtel de 13 chambres, avec une suite de 5 personnes, situé à Campénéac<br>
-                  <a href="http://www.oree-foret.fr/" target="new">http://www.oree-foret.fr/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 13,5 km</p>
-                  <p>Prix/nuit: 49€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/ville_ruaud.jpg" alt="hotel"></td>
-                <td><p>LOGIS DE LA VILLE RUAUD</p>
-                  <p>Chambre d'hôtes de 3 chambres 3 à 5 personnes, situé à Augan<br>
-                  <a href="http://www.cap-broceliande.com/" target="new">http://www.cap-broceliande.com/</a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 21 km</p>
-                  <p>Prix/nuit: 50€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/hotel-le-cobh-ploermel-003.jpg" alt="hotel"></td>
-                <td><p>LE COBH</p>
-                  <p>Hôtel de 11 chambres 2 à 4 personnes, situé à Ploërmel<br>
-                  <a href="http://www.hotel-lecobh.com/" target="new">http://www.hotel-lecobh.com/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 22 km</p>
-                  <p>Prix/nuit: 77€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/retour_peche.jpg" alt="hotel"></td>
-                <td><p>LE RETOUR DE PECHE</p>
-                  <p>Hôtel de 11 chambres situé à Ploërmel<br>
-                  <a href="http://www.leretourdepeche.fr/" target="new">http://www.leretourdepeche.fr/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 22,5 km</p>
-                  <p>Prix/nuit: 65€</p></td>
-              </tr>
-              <tr>
-                <td height="87" align="left" valign="top"><img src="images/hotels/Chambre-Deluxe-Chateau-du-Roi-Arthur-Ploermel-4-etoiles_1200.600.crop-S.photo.c2693.jpg" alt="hotel"></td>
-                <td><p>HOTEL ROI ARTHUR &amp; RESIDENCE LANCELOT</p>
-                  <p>Hotel de 46 chambres et résidences de 28 chambres, situé au bord du Lac aux Ducs à Ploërmel<br>
-                  <a href="http://www.hotelroiarthur.com/" target="new">http://www.hotelroiarthur.com/</a><a href="http://paimpont-broceliande.wifeo.com/" target="new"></a></p></td>
-                <td align="left" valign="top"><p>Distance de la salle: 29 km</p>
-                  <p>Prix/nuit: à partir de 86€</p></td>
-              </tr>
-            </table>
-          </li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+      <h2 class="title">Hébérgement</h2>
+      <h3>Hôtels, chambres d'hôtes et gites</h3>
+      <p>Vous trouverez ci-dessous une liste des possibilités de logement à proximité du mariage.<br>
+	  Pour ceux qui le souhaitent, il sera aussi possible de dormir dans la salle en emmenant vos matelas. Parlez-nous en!</p>
+      <table id="accomodation">
+        <!-- <caption>Liste des logements à proximité:</caption> -->
+        <tbody>
+        <tr>
+        <td><a href="http://camping-paimpont-broceliande.com/" target="new"><img src="images/hotels/camping-paimpont-chalets-02.jpg"></a>
+        <td><a href="http://camping-paimpont-broceliande.com/" target="new">CAMPING DE PAIMPONT</a><br>200m
+        <td>6 chalets de 4 à 6 couchages<br>
+            Emplacements tentes et caravanes
+        <td>150€ le week-end par chalet<br>à partir de 6€ le camping
+
+        <tr>
+        <td><a href="http://www.relais-de-broceliande.fr/" target="new"><img src="images/hotels/logis-le-relais-de-broceliande.jpg"></a>
+        <td><a href="http://www.relais-de-broceliande.fr/" target="new">LE RELAIS DE BROCELIANDE</a><br>700m
+        <td>Hôtel de 24 chambres dans le centre de Paimpont
+        <td>105€ à 148€ la nuit
+
+        <tr>
+        <td><a href="http://www.lamaisondugraal.net/" target="new"><img src="images/hotels/maison_graal.jpg" alt="hotel"></a>
+        <td><a href="http://www.lamaisondugraal.net/" target="new">LA MAISON DU GRAAL</a><br>700m
+        <td>Gite de 2 chambres doubles
+        <td>60€ la nuit
+
+        <tr>
+        <td><a href="http://foret-broceliande.fr/Le-Chateau-du-Bois" target="new"><img src="images/hotels/chateaudubois-03.jpg"></a>
+        <td><a href="http://foret-broceliande.fr/Le-Chateau-du-Bois" target="new">LE CHATEAU DU BOIS</a><br>800m
+        <td>Chambre d'hôtes de 2 chambres 2 à 3 personnes
+        <td>50€ la nuit
+
+        <tr>
+        <td><a href="http://logis-ponthus.fr/" target="new"><img src="images/hotels/logis-ponthus-paimpont-broceliande_016.jpg"></a>
+        <td><a href="http://logis-ponthus.fr/" target="new">LOGIS DE PONTHUS</a><br>950m
+        <td>Gite de 6 chambres 2 à 3 personnes
+        <td>54€ la nuit
+
+        <tr>
+        <td><a href="http://paimpont-broceliande.wifeo.com/" target="new"><img src="images/hotels/etangPaimpont.jpg"></a>
+        <td><a href="http://paimpont-broceliande.wifeo.com/" target="new">GITE DE L'ETANG</a><br>1.5km
+        <td>Gite de 4 chambres 2 à 3 personnes
+        <td>76€ la nuit
+
+        <tr>
+        <td><a href="http://foret-broceliande.fr/La-Corne-du-Cerf" target="new"><img src="images/hotels/corne_du_cerf_005.jpg"></a>
+        <td><a href="http://foret-broceliande.fr/La-Corne-du-Cerf" target="new">LA CORNE DU CERF</a><br>3km
+        <td>Chambre d'hôtes de 3 chambres 2 à 3 personnes
+        <td>53€ la nuit
+
+        <tr>
+        <td><a href="http://broceliande.manoir-du-tertre.fr/" target="new"><img src="images/hotels/manoir_TERTRE_315314c.jpg"></a>
+        <td><a href="http://broceliande.manoir-du-tertre.fr/" target="new">LE MANOIR DU TERTRE</a><br>4km
+        <td>Chambre d'hôtes de 5 chambres
+        <td>50 à 60€ la nuit
+
+        <tr>
+        <td><a href="http://www.gitepontdusecret.fr/" target="new"><img src="images/hotels/pont_secret.jpg"></a>
+        <td><a href="http://www.gitepontdusecret.fr/" target="new">LE PONT DU SECRET</a><br>5.5km
+        <td>Gite de 4 chambres 2 à 3 personnes
+        <td>50 à 58€ la nuit
+
+        <tr>
+        <td><a href="http://www.cpie-broceliande.fr/" target="new"><img src="images/hotels/cpie-broceliande-01.jpg"></a>
+        <td><a href="http://www.cpie-broceliande.fr/" target="new">CPIE FORET BROCELIANDE</a><br>6,5 km
+        <td>15 chambres de 2 à 6 lits
+        <td>17€ la nuit
+
+        <tr>
+        <td><a href="http://hotel-broceliande.o2b.fr/" target="new"><img src="images/hotels/Hotel-O2B-Aux-Berges-de-Broceliande_012.jpg"></a>
+        <td><a href="http://hotel-broceliande.o2b.fr/" target="new">O2B AUX BERGES DE BROCELIANDE</a><br>8 km
+        <td>Hotel de 12 chambres
+        <td>69€ la nuit
+
+        <tr>
+        <td><a href="http://www.hotel-guer.com/" target="new"><img src="images/hotels/le bellevue.jpg"></a>
+        <td><a href="http://www.hotel-guer.com/" target="new">LE BELLEVUE</a><br>12 km
+        <td>Hotel de 14 chambres
+        <td>80€ la nuit
+
+        <tr>
+        <td><a href="http://www.arlitorienn.fr/" target="new"><img src="images/hotels/litorienn.jpg"></a>
+        <td><a href="http://www.arlitorienn.fr/" target="new">AR LITORIENN</a><br>13.5 km
+        <td>Chambre d'hôtes de 3 chambres 2 à 4 personnes
+        <td>60€ à 95€ la nuit
+
+      </table>
+      
+      <li>
     </section>
     <!--- REGISTRY ENDS -->
     
     
-    <!--- VIDEOS SECTION STARTS 	
-    <section id="video" class="video">
-    <h2 class="title">Vidéos</h2>
-    <p><center>Stop-motion &quot;Save the Date&quot;</center></p>
-      <center><iframe width="480" height="360" src="http://www.youtube.com/embed/ikywdi-FDD4?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-      </center>
-     
-     </section>
-     
-    <!-- VIDEOS SECTION ENDS -->
-    
-    
     <!--- RSVP STARTS -->
     <section id="rsvp" class="contact">
-    
-      <h2 class="title">Contact</h2>
-      
-      <div class="wrapper">
+	  
+	  <h2 class="title">R.S.V.P.</h2>
+	  
+	  <div class="wrapper">
 
-    <!--- <p>&nbsp;</p>-->
+        <div id="note"><FONT color="#393939"><p>Nous avons hâte de fêter notre mariage avec vous !</p> 
+        <p>Merci de nous confirmer votre présence avant le 31 mars.</p></FONT>
+        </div>
         
-        <form action="#" method="post">
+		<form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+		  action="https://borisetalex.wufoo.com/forms/z2y4a6n0a0ooox/#public">
+          
+          <fieldset>
+            <h3>Serez vous à nos côtés le 20 juin 2015?</h3>
+            
+            <div class="checkbox">
+			  <input id="Field5" name="Field5" type="checkbox" class="field checkbox" value="OUI, nous serons présents !">
+              <label for="Field5">OUI, nous serons présents !</label>
+            </div>
+            <div class="checkbox">
+              <p>
+				<input id="Field6" name="Field6" type="checkbox" class="field checkbox" value="NON, nous ne pourrons pas être là.">
+                <label for="Field6">NON, nous ne pourrons pas être là.</label>
+              </p>
+            </div>
+          </fieldset>
 
-            <p>&nbsp;            </p>
-            <p>
-              <input type="text" id="name" name="name" placeholder="Vos noms & prénoms*">
-              <input type="email" id="email" name="email" placeholder="Votre e-mail*">
-              <textarea name="message" class="form-message" id="message" placeholder="Laissez-nous un petit mot!"></textarea>
-              </fieldset>
-              
-              <input type="submit" class="submit" id="send" value="Envoyer">
-            </p>
+          <fieldset id="guests">
+            <h3>Infos Invités:</h3>
+			
+			<input id="Field2" name="Field2" type="text" class="field text nospin medium" placeholder="Nombre d'adultes (à partir de 13 ans)"  tabindex="5" onkeyup=""> 
+			<input id="Field3" name="Field3" type="text" class="field text nospin medium" placeholder="Nombre d'enfants (de 3 à 12 ans)"  tabindex="6" onkeyup=""> 
+          </fieldset>
+          
+          <fieldset>
+            <h3>Message:</h3>
+            <!--<input type="text" id="name" name="name" placeholder="Vos noms & prénoms*">-->
+			<input id="Field1" name="Field1" type="text" class="field text medium" placeholder="Vos noms & prénoms*" maxlength="255" tabindex="1" onkeyup=""       required />
+			
+            <!--<input type="email" id="email" name="email" placeholder="Votre e-mail*">-->
+			<input id="Field106" name="Field106" type="email" spellcheck="false" class="field text medium" placeholder="Votre e-mail*" maxlength="255" tabindex="2"       required />
+			
+            <!--<textarea name="message" class="form-message" id="message" placeholder="Laissez-nous un petit mot! (...si nécessaire, merci de nous indiquer si vous êtes soumis à un régime particulier.)"></textarea>-->
+			<textarea id="Field4" name="Field4" class="field textarea medium" placeholder="Laissez-nous un petit mot! (...si nécessaire, merci de nous indiquer si vous êtes soumis à un régime particulier.)" spellcheck="true" rows="10" cols="50" tabindex="7" onkeyup=""></textarea>
+          </fieldset>
+          
+          <!--<input type="submit" class="submit" id="send" value="Envoyer">-->
+		  <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Soumettre" />
+		  <input type="hidden" id="idstamp" name="idstamp" value="er0+aUC30uT7yhZt7BsgnOF2a2rAMXX4Zo7arMI5Y3A=" />
           
         </form>
         
@@ -460,23 +363,24 @@ $(document).ready(function() {
         </div>
         <div class="contact-details contact-details-2">
           <h4>Boris</h4>
-          <p>06 10 23 45 79</p>
+          <p>06 76 10 30 32</p>
          
         </div>
          <p>
-            <a href="mailto:borisetalex@mail.com?subject=RSVP"><br>
+            <a href="mailto:borisetalex@gmail.com?subject=RSVP"><br>
           </a></p>
          <p>&nbsp;</p>
-         <p><a href="mailto:borisetalex@mail.com?subject=RSVP">borisetalex@gmail.com</a>
+         <p><a href="mailto:borisetalex@gmail.com?subject=RSVP">borisetalex@gmail.com</a>
          </p>  
       </div>
+	  
         
     </section>
     <!--- RSVP ENDS -->
 			
     <!-- FOOTER STARTS -->
     <footer id="footer">	
-      <p class="copyright"> &copy; 2014 Studio Minière - Tous droits réservés.</p>
+      <p class="copyright"> &copy; 2015 Studio Minière - Tous droits réservés.</p>
     </footer>
     <!-- FOOTER ENDS -->
 			

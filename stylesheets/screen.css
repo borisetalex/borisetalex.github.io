@@ -156,8 +156,7 @@ a {
 }
 
 a:hover {
-	text-decoration: underline;
-	color: #ff0099;
+    text-decoration: underline;
 }
 
 .wrapper {
@@ -1658,3 +1657,4 @@ body {
         background-size: 109px 130px;
     }
 }
+
